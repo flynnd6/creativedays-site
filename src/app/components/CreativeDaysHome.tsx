@@ -392,14 +392,14 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                                     <Mail className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Email</p>
-                                        <a href="mailto:Creativedayspreschool25@gmail.com" className="text-sm sm:text-base text-gray-600 hover:text-amber-600">Email Us</a>
+                                        <a href="mailto:Creativedayspreschool25@gmail.com" className="text-sm sm:text-base text-gray-600 hover:text-amber-600">Creativedayspreschool25@gmail.com</a>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
                                     <Facebook className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Facebook Page</p>
-                                        <a href="https://www.facebook.com/CreativeDaysPreschool/" target="_blank" rel="noopener noreferrer" className="text-amber-600 text-xs sm:text-sm mt-2">Open Create Days Facebook Page</a>
+                                        <a href="https://www.facebook.com/CreativeDaysPreschool/" target="_blank" rel="noopener noreferrer" className="text-amber-600 text-xs sm:text-sm mt-2">@CreativeDaysPreschool</a>
                                     </div>
                                 </div>
                             </div>
