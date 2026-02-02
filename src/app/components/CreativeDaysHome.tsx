@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Phone, Mail, MapPin, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Menu, X, Phone, Mail, MapPin, Clock, ChevronLeft, ChevronRight, Facebook } from 'lucide-react'
 import Image from 'next/image'
 
 interface GalleryImage {
@@ -60,7 +60,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
 
     const testimonials = [
         {
-            text: "Our daughter has blossomed at Little Learners. The teachers are nurturing and the Montessori approach has helped her become independent and confident.",
+            text: "Our daughter has blossomed at Creative Days. The teachers are nurturing and the Montessori approach has helped her become independent and confident.",
             author: "Sarah Johnson",
             role: "Parent"
         },
@@ -119,7 +119,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center">
-                            <h1 className="text-xl sm:text-2xl font-bold text-amber-600">Little Learners Montessori</h1>
+                            <h1 className="text-xl sm:text-2xl font-bold text-amber-600">Creative Days Pre-School</h1>
                         </div>
 
                         <div className="hidden md:flex space-x-6 lg:space-x-8">
@@ -191,7 +191,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                     <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
                         <div>
                             <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
-                                At Little Learners Montessori, we believe every child is unique and deserves an education
+                                At Creative Days Pre-School, we believe every child is unique and deserves an education
                                 tailored to their individual needs and interests. Our Montessori-inspired approach encourages
                                 independence, creativity, and a lifelong love of learning.
                             </p>
@@ -378,28 +378,35 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                                     <MapPin className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Address</p>
-                                        <p className="text-sm sm:text-base text-gray-600">123 Learning Lane<br />Cityville, ST 12345</p>
+                                        <p className="text-sm sm:text-base text-gray-600">25, 26 Baskin Cottages<br /> Ballymacartle<br /> Dublin<br /> K67 H6P1</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
                                     <Phone className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Phone</p>
-                                        <p className="text-sm sm:text-base text-gray-600">(555) 123-4567</p>
+                                        <p className="text-sm sm:text-base text-gray-600">(085) 287 4598</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
                                     <Mail className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Email</p>
-                                        <p className="text-sm sm:text-base text-gray-600">info@littlelearnersmontessori.com</p>
+                                        <p className="text-sm sm:text-base text-gray-600">Creativedayspreschool25@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
-                                    <Clock className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
+                                    <Mail className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
-                                        <p className="font-semibold text-base sm:text-lg">Hours</p>
-                                        <p className="text-sm sm:text-base text-gray-600">Monday - Friday: 7:00 AM - 6:00 PM</p>
+                                        <p className="font-semibold text-base sm:text-lg">Email</p>
+                                        <p className="text-sm sm:text-base text-gray-600">Creativedayspreschool25@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start">
+                                    <Facebook className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
+                                    <div>
+                                        <p className="font-semibold text-base sm:text-lg">Facebook Page</p>
+                                        <p className="text-sm sm:text-base text-gray-600">https://www.facebook.com/CreativeDaysPreschool/</p>
                                     </div>
                                 </div>
                             </div>
@@ -408,7 +415,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                             <div className="text-center p-4">
                                 <MapPin className="text-amber-600 mx-auto mb-3" size={48} />
                                 <p className="text-amber-700 text-base sm:text-lg font-semibold">Map Integration</p>
-                                <p className="text-amber-600 text-xs sm:text-sm mt-2">Add Google Maps embed or similar</p>
+                                <p className="text-amber-600 text-xs sm:text-sm mt-2">https://maps.app.goo.gl/WU8u3s6TmyhpSX2u7</p>
                             </div>
                         </div>
                     </div>
@@ -418,7 +425,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
             {/* Footer */}
             <footer className="bg-gray-900 text-white py-6 sm:py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-sm sm:text-base">&copy; 2024 Little Learners Montessori. All rights reserved.</p>
+                    <p className="text-sm sm:text-base">&copy; 2026 Creative Days Pre-School. All rights reserved.</p>
                 </div>
             </footer>
         </div>
