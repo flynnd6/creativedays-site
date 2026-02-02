@@ -385,28 +385,21 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                                     <Phone className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Phone</p>
-                                        <p className="text-sm sm:text-base text-gray-600">(085) 287 4598</p>
+                                        <a href="tel:+353852874598" className="text-sm sm:text-base text-gray-600 hover:text-amber-600">(085) 287 4598</a>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
                                     <Mail className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Email</p>
-                                        <p className="text-sm sm:text-base text-gray-600">Creativedayspreschool25@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start">
-                                    <Mail className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
-                                    <div>
-                                        <p className="font-semibold text-base sm:text-lg">Email</p>
-                                        <p className="text-sm sm:text-base text-gray-600">Creativedayspreschool25@gmail.com</p>
+                                        <a href="mailto:Creativedayspreschool25@gmail.com" className="text-sm sm:text-base text-gray-600 hover:text-amber-600">Email Us</a>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
                                     <Facebook className="text-amber-600 mt-1 mr-3 flex-shrink-0" size={24} />
                                     <div>
                                         <p className="font-semibold text-base sm:text-lg">Facebook Page</p>
-                                        <p className="text-sm sm:text-base text-gray-600">https://www.facebook.com/CreativeDaysPreschool/</p>
+                                        <a href="https://www.facebook.com/CreativeDaysPreschool/" target="_blank" rel="noopener noreferrer" className="text-amber-600 text-xs sm:text-sm mt-2">Open Create Days Facebook Page</a>
                                     </div>
                                 </div>
                             </div>
@@ -415,13 +408,12 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                             <div className="text-center p-4">
                                 <MapPin className="text-amber-600 mx-auto mb-3" size={48} />
                                 <p className="text-amber-700 text-base sm:text-lg font-semibold">Map Integration</p>
-                                <p className="text-amber-600 text-xs sm:text-sm mt-2">https://maps.app.goo.gl/WU8u3s6TmyhpSX2u7</p>
+                                <a href="https://maps.app.goo.gl/WU8u3s6TmyhpSX2u7" target="_blank" rel="noopener noreferrer" className="text-amber-600 text-xs sm:text-sm mt-2 hover:text-amber-700">View Creative Days on Google Maps</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             {/* Footer */}
             <footer className="bg-gray-900 text-white py-6 sm:py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
