@@ -165,13 +165,25 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
             </nav>
 
             {/* Hero Section */}
-            <section id="home" className="pt-16 bg-gradient-to-br from-amber-50 to-orange-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+            <section id="home" className="pt-16 relative">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <Image
+                        src="/images/gallery/CreativeDaysYardSketch.jpg"
+                        alt="Creative Days Pre-School"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 bg-black/40"></div>
+                </div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
                     <div className="text-center">
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
                             Nurturing Young Minds
                         </h2>
-                        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
+                        <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 drop-shadow-md">
                             Where curiosity meets discovery in a warm, Montessori-inspired environment
                         </p>
                         <button
