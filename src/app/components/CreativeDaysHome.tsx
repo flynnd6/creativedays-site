@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react'
 import { Menu, X, Phone, Mail, MapPin, Clock, ChevronLeft, ChevronRight, Facebook } from 'lucide-react'
 import Image from 'next/image'
 
+const basePath = process.env.NODE_ENV === 'production' ? '/creativedays-site' : ''
+
 interface GalleryImage {
     filename: string
     date: string
@@ -169,7 +171,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <Image
-                        src="/images/gallery/CreativeDaysYardSketch.jpg"
+                        src={`${basePath}/images/gallery/CreativeDaysYardSketch.jpg`}
                         alt="Creative Days Pre-School"
                         fill
                         className="object-cover"
@@ -285,7 +287,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                                     className="relative aspect-square bg-gray-200 rounded-lg overflow-hidden cursor-pointer group"
                                 >
                                     <Image
-                                        src={`/images/gallery/${image.filename}`}
+                                        src={`${basePath}/images/gallery/${image.filename}`}
                                         alt={image.alt}
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -342,7 +344,7 @@ export default function CreativeDaysHome({ galleryImages }: CreativeDaysHomeProp
                     <div className="max-w-5xl w-full relative" onClick={(e) => e.stopPropagation()}>
                         <div className="relative w-full h-[80vh]">
                             <Image
-                                src={`/images/gallery/${galleryImages[lightboxIndex].filename}`}
+                                src={`${basePath}/images/gallery/${galleryImages[lightboxIndex].filename}`}
                                 alt={galleryImages[lightboxIndex].alt}
                                 fill
                                 className="object-contain"
